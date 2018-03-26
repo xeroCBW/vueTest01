@@ -44,10 +44,6 @@
               </el-breadcrumb>
             </div>
           </div>
-
-          <div style="margin-top:10px">
-            <router-view></router-view>
-          </div>
         </el-col>
       </el-row>
     </div>
@@ -68,20 +64,15 @@
       },
 
       handleSelect(key, keyPath){
-        switch(key){
-          case '1':
-            this.$router.push('/Page1');
-            this.breadcrumbItems  = ['导航一']
-            break;
-          case '2':
-            this.$router.push('/Page2')
-            this.breadcrumbItems  = ['导航二']
-            break;
-          case '3':
-            this.$router.push('/Page3')
-            this.breadcrumbItems  = ['导航三']
-            break;
-        }
+
+        console.log("==start==="+key)
+
+
+        let self = this;
+        self.$router.push("/page1")
+
+        console.log("===end=="+key)
+
       },
 
     },
