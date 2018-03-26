@@ -44,6 +44,10 @@
               </el-breadcrumb>
             </div>
           </div>
+
+          <div style="margin-top:10px">
+            <router-view></router-view>
+          </div>
         </el-col>
       </el-row>
     </div>
