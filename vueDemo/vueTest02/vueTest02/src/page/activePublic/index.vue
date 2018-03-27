@@ -10,13 +10,41 @@
       <el-step title="个性设置" description=""></el-step>
     </el-steps>
 
+    <!-- 视图 -->
+    <router-view class="view"></router-view>
+
+    <div class="but-group">
+      <el-button >预览</el-button>
+      <el-button @click="goPrevious()">上一步</el-button>
+      <el-button @click="goNext"   type="primary">下一步</el-button>
+      <el-button  type="primary">发布活动</el-button>
+    </div>
+
   </div>
 
 </template>
 
 <script>
   export default {
-    name: "index"
+    name: "index",
+    data(){
+      return {
+        step:1
+      }
+    },
+
+    methods:{
+
+      goNext(){
+
+        alert("goNext")
+      },
+      goPrevious(){
+
+        alert("goPrevious")
+      },
+
+  }
   }
 </script>
 
