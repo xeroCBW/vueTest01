@@ -27,8 +27,10 @@
 
       <!-- 右侧主内容区 -->
       <div  class="main-right" >
-
+        <!-- 视图 -->
+        <router-view class="view"></router-view>
       </div>
+
     </main>
   </div>
 </template>
