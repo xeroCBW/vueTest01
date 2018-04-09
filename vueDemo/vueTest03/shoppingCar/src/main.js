@@ -4,13 +4,15 @@ import Vue from 'vue';
 import VueResource from 'vue-resource';
 import App from './App';
 import router from './router/index.js';
-
-// import 'common/stylus/index.styl';
+//./表明是当前目录,即src目录
+// import './common/stylus/index.styl';
 
 Vue.use(VueResource);
 
 /* eslint-disable no-new */
 new Vue({
+
+  //el是一个挂载点,这样可以实现在app中的body进行展示
   el: '#app',
   router,
   render: h => h(App)
