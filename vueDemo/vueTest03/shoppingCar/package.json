@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "vue": "^2.5.2",
-//    安装vue-router时候可能会遇到没有写入权限,用管理员权限运行
     "vue-resource": "^1.5.0",
     "vue-router": "^3.0.1"
   },

@@ -3,6 +3,7 @@
 import Vue from 'vue';
 import VueResource from 'vue-resource';
 import App from './App';
+//这个里面有对vueRouter进行引用
 import router from './router/index.js';
 //./表明是当前目录,即src目录
 //刚才不能导入的原因是没有加stylus依赖的原因
