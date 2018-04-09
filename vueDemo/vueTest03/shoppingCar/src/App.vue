@@ -7,13 +7,21 @@
 
     <div class="tab">
       <!--使用flex布局-->
-      <div class="tab-item">商品</div>
-      <div class="tab-item">评论</div>
-      <div class="tab-item">商家</div>
+      <div class="tab-item">
+        <router-link to="/foo">商品</router-link>
+      </div>
+      <div class="tab-item">
+        <router-link to="/foo">评论</router-link>
+      </div>
+      <div class="tab-item">
+        <router-link to="/foo">商家</router-link>
+      </div>
 
     </div>
-    <div class="content">
-    </div>
+
+    <!-- 路由匹配到的组件将渲染在这里 -->
+    <router-view></router-view>
+
   </div>
 </template>
 
