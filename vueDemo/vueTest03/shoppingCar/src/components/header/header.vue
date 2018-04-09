@@ -5,7 +5,11 @@
   默认生成的模板
 
   -->
+<div class="">
 
+  我是header
+
+</div>
 </template>
 
 <script>
