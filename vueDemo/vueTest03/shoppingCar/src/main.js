@@ -5,7 +5,8 @@ import VueResource from 'vue-resource';
 import App from './App';
 import router from './router/index.js';
 //./表明是当前目录,即src目录
-// import './common/stylus/index.styl';
+//刚才不能导入的原因是没有加stylus依赖的原因
+import './common/stylus/index.styl';
 
 Vue.use(VueResource);
 
