@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <!--<img src="./assets/logo.png">-->
     <!--<router-view/>-->
 
@@ -8,13 +8,13 @@
     <div class="tab">
       <!--使用flex布局-->
       <div class="tab-item">
-        <router-link to="/foo">商品</router-link>
+        <router-link to="/goods">商品</router-link>
       </div>
       <div class="tab-item">
-        <router-link to="/foo">评论</router-link>
+        <router-link to="/ratings">评论</router-link>
       </div>
       <div class="tab-item">
-        <router-link to="/foo">商家</router-link>
+        <router-link to="/seller">商家</router-link>
       </div>
 
     </div>
@@ -40,6 +40,7 @@ export default {
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
+  @import "./common/stylus/mixin.styl"
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -51,17 +52,20 @@ export default {
 
   //记住是id -->#
   //class -->.
-  #app
     .tab
       display:flex
       width:100%
       height :40px
       line-height :40px
-      background-color red
+      /*background-color red*/
       .tab-item
         flex :1
         text-align: center
-
-
+        & > a
+          display: block
+          font-size: 14px
+          color: rgb(77, 85, 93)
+          &.active
+            color: rgb(240, 20, 20)
 
 </style>

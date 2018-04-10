@@ -1,20 +1,13 @@
 <template>
-
-  <!--
-
-  默认生成的模板
-
-  -->
-<div>
-
-  我是header
+<div class="">
+  我是goods
 
 </div>
 </template>
 
 <script>
   export default {
-    name: "header"
+    name: "goods"
   }
 </script>
 
